@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giveaway Login Google</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎁 Giveaway Spesial! 🎁</h1>
+        <div id="login-section">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        </div>
+        <div id="giveaway-section" style="display: none;">
+            <p>Selamat datang, <span id="user-name"></span>!</p>
+            <button onclick="joinGiveaway()">Ikut Giveaway</button>
+            <h2 id="winner"></h2>
+            <button onclick="signOut()">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
